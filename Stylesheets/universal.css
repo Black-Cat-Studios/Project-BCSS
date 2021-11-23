@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Spent hours cleaning this up, 
+   Created by Bruce Tierney 2021
+   
+   if you need to reach out to  me about anything
+   - intykat@black-catstudios.com 
+*/
+
+/*
+ ========
+ INIT
+ ========
+*/
+
+:root{
+    --primary: #2f2f2f;
+    --main: grey;
+    --color: #000000;
+    --secondary: #ffffff;
+    --tertiary: #f3f3f3;
+}
+
+html.dark{
+    --primary: #2f2f2f;
+    --color: #ffffff;
+    --secondary: #2f2f2f;
+    --tertiary: #383838;
+}
+
+::selection {
+    background: var(--primary); 
+    color: var(--secondary);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    -webkit-text-fill-color: content-box; 
+}
+
+::-moz-selection {
+    background: var(--primary); 
+    color: var(--secondary);
+    -moz-background-clip: none;
+    background-clip: none;
+    -moz-text-fill-color: none;
+}
+
+:focus-visible{
+    transition: all .5s;
+    outline: none;
+    box-shadow: 0 0 0 5px var(--main);
+}
+
+::-moz-focus-inner{
+    outline: none;
+}
+
+
+/*
+ ========
+ LAYOUT
+ ========
+*/
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px ;
+    padding: 0px;
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+}
+
+body{
+    color: var(--color);
+    margin: 0;
+    overflow-x: hidden;
+    background: var(--secondary);
+}
+
+/* Navigation */
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    overflow: hidden;
+    background-color: var(--primary);
+    text-align: left;
+    width: auto;
+    position: sticky;
+    top: 0; 
+    z-index: 100000;
+    height: 55px;
+}
+
+nav #navlinks{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -170px;
+}
+
+nav .a:first-of-type {
+    margin: 0px 0px 0px -60px;  
+}
+
+nav #img{
+    width:36px;
+    height:40px;
+    margin: 7px;
+}
+
+nav #accountContainer{
+    float: right;
+    right: 2%;
+    top: 50%;
+    text-align: center;
+    margin: -8px 0 0 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+nav #accountContainer button{
+    max-height: 20px;
+    float: left;
+    color: white;
+    margin-right: 10px;
+}
+
+nav #accountContainer img{
+    transition: .3s;
+    width: 15px;
+}
+
+/* Account Manager */
+
+#accountOptionsDropdown{
+    z-index: 10000;
+    transition: top .2s;
+    position: fixed;
+    right: 1%;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.219);
+}
+
+#accountOptionsDropdown #settings{
+    transition: background .2s;
+    display: block;
+    height: 50px;
+    width: 140px;
+    text-align: center;
+    border-bottom: 1.5px solid rgb(180, 180, 180);
+    border-radius: 10px 10px 0 0;
+}
+
+#accountOptionsDropdown #logout{
+    transition: background .2s;
+    color: rgb(255,97,97);
+    border-top: 1.5px solid rgb(207, 207, 207);
+    display: block;
+    height: 50px;
+    width: 140px;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+}
+
+#accountSettingsContainer{
+    background: rgba(0, 0, 0, 0.6);
+    width: 0;
+    height: 0;
+    z-index: 1000000;
+    position: fixed;
+    display: flex;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .1s; 
+    overflow: hidden;
+}
+
+#accountSettingsContainer h1{
+    background-color: rgb(211, 211, 211);
+    padding: 8px 0 8px 10px;
+    font-size: 25px;
+    margin: 0;
+    width: 590px;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable{
+    width: 560px;
+    height: 300px;
+    background-color: var(--secondary);
+    border-radius: 0 0px 10px 10px;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all .5s;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable div{
+    display: none;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable #tabberLOLOPOOOLOOL{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+#tabberLOLOPOOOLOOL a{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable #theme{
+    height: calc(100% - 20px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#theme button{
+    width: 220px;
+    height: 120px;
+    background-image: url(../Images/dark-theme.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    box-shadow: 0 0 10px -5px black;
+    border-radius: 10px;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable #linked{
+    height: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#linked input{
+    border: none;
+    width: 60%;
+    background-color: rgba(211, 211, 211, 0.356);
+    padding: 16px 10px; 
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 90px;
+    box-shadow: 0 0 0 0;
+}
+
+#linked #rblxarea{
+    display: inline-block;
+    position: absolute;
+    margin-right: 520px;
+    margin-top: -120px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../Images/Roblox-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#linked #discarea{
+    display: inline-block;
+    position: absolute;
+    margin-right: 520px;
+    margin-top: 30px;
+    width: 35px;
+    height: 25px;
+    background-image: url(../Images/Discord-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#linked #emlarea{
+    display: inline-block;
+    position: absolute;
+    margin-right: 520px;
+    margin-top: 170px;
+    width: 35px;
+    height: 26px;
+    background-image: url(../Images/Email-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#linked div::after{
+    display: block;
+    padding: 15px 10px; 
+    border-radius: 10px;
+    width: 100px;
+    background-color: var(--primary);
+    content: 'Change';
+    margin-left: 430px;
+    margin-top: -5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#linked div::after:hover{
+    filter: brightness(50%);
+}
+
+#linked #discarea::after{
+    margin-top: -12px;
+}
+
+#linked #emlarea::after{
+    margin-top: -10px;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable #policies{
+    height: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#policies a{
+    margin: 70px;
+    color: black;font-weight: 500;
+}
+
+#bocs_box_sussyb_sus_fom_pi_co_cooking_relatable #delete{
+    height: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#delete textarea{
+    width: 95%;
+    height: 140px;
+    outline: none;
+    border: none;
+    background-color: rgba(211, 211, 211, 0.356);
+    box-shadow: 0 0 0 0;
+}
+
+#delete p{
+    display: block;
+    width: 92%;
+    margin-bottom: 0px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 25px;
+}
+
+#delete button{
+    display: block;
+    padding: 15px 10px; 
+    border-radius: 10px;
+    width: 300px;
+    background-color: var(--primary);
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#delete button:hover{
+    filter: brightness(150%);
+}
+
+/* Feedback */
+
+#feedback{
+    position: fixed;
+    right: 8%;
+    bottom: -400px;
+    height: 400px;
+    width: 260px;
+	background-color: var(--secondary);
+    z-index: 1000;
+	box-shadow: 0px -31px 10px 0 rgba(0, 0, 0, 0.185);
+    transition: .5s;
+}
+
+#feedback h4{
+    text-align: center;
+    height: 20px;
+    width: 240px;
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    margin-top: -35px;
+    color: white;
+    background: var(--primary);
+}
+
+/* Footer */
+
+footer img{
+    width:36px;
+    height:40px;
+    position: absolute;
+    left: 3%;
+    margin-top: -15px;
+}
+
+footer .bottom{
+    color:white;
+    background-color: var(--primary);
+    height: 100px;
+}
+
+footer .footer_social_areas{
+    position: absolute;
+    right: 3%;
+    margin-top: -20px;
+    width: fit-content;
+    height: fit-content;
+    --main: lightgrey;
+}
+
+footer .bottomlinks{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.bottomline{
+    background: rgba(82,82,82,1);
+    width: 95vw;
+    position: absolute;
+    margin-top: 40px;
+    left: 2%;
+    height: 2px;
+}
+
+/* Wedges */
+
+.wedge1{
+    width: auto;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../Images/wesdge.png");
+    margin-top: -125px;
+}
+
+.wedge1.variant2{
+    background-image: url("../Images/wedge-b.png"); 
+}
+
+.wedge1.variant3{
+    margin-top: 0px;
+    background-image: url("../Images/darkwedge.png"); 
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    resize: none;
+}
+
+/*
+ ========
+ STYLE
+ ========
+*/
+
+/* Feedback */
+
+#feedback:hover{
+	bottom: -170px;
+}
+
+#feedback input, 
+textarea, 
+button[type="submit"]{
+	background: none;
+	color: inherit;
+    outline: none;
+	font: inherit;
+    resize: none;
+    padding: 5px;
+    width: 210px;
+    margin-left: 18px;
+    margin-top: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#feedback input:focus, 
+textarea:focus{
+    border: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+#feedback button[type="submit"]{
+    -webkit-transform: skew(160deg);
+    -moz-transform: skew(160deg);
+    -o-transform: skew(160deg);
+    transform: skew(160deg);
+    margin-left: 13px;
+    margin-top: 5px;
+    border: none;
+}
+
+#feedback button[type="submit"] div{
+    -ms-transform: skewX(-160deg); 
+    -webkit-transform: skewX(-160deg);
+    -o-transform: skew(-160deg);
+    transform: skewX(-160deg);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 225px;
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+ 
+#feedback p{
+    text-align: center;
+}
+
+/* Navigation */
+
+nav .a{
+    float: left;
+    color: #f2f2f2;
+    background-color: #f2f2f200;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 40px;
+    margin: 0px 0px 0px 20px;
+    transition:  0.3s 0s ease;
+}
+
+nav .a:hover{
+    background-color: rgba(255, 255, 255, .29) ;
+}
+
+nav .a.active{
+    background-color: #f2f2f2;
+    color: var(--primary); 
+}
+
+/* Account Manager */
+
+#accountOptionsDropdown.dark{
+    background-color: var(--primary);
+    color: white;
+}
+
+#accountOptionsDropdown.dark #settIcon{
+    filter: invert(1);
+}
+
+#accountOptionsDropdown.dark #settings{
+    border-bottom: 1.5px solid rgb(104, 104, 104);
+}
+
+#accountOptionsDropdown.dark #logout{
+    border-top: 1.5px solid rgb(104, 104, 104);
+}
+
+#accountOptionsDropdown #logout:hover{
+    background: rgba(255,97,97,.2);
+}
+
+#accountOptionsDropdown #settings:hover{
+    background: rgba(145, 145, 145, 0.2);
+}
+
+#logIcon{
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    top: 66px;
+    position: absolute;
+    background: url("../Images/logout-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#settIcon{
+    width: 19px;
+    height: 19px;
+    left: 12px;
+    top: 15px;
+    position: absolute;
+    background: url("../Images/settings-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Settings Container */
+
+#accountSettingsContainer h1::after{
+    content: '';
+    display: block;
+    float: right;
+    margin-right: 15px;
+    margin-top: 8px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../Images/Close-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+#tabberLOLOPOOOLOOL a.active{
+    font-weight: bolder;
+}
+
+#tabberLOLOPOOOLOOL a.active::after{
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: .2s;
+}
+
+#tabberLOLOPOOOLOOL a:not(.active):hover::after{
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: .2s;
+    opacity: .3;
+}
+
+#themeB::after{
+    width: 80px;
+    background-color: black;
+    margin-left: -6px;
+}
+
+#linkedB::after{
+    width: 150px;
+    background-color: black;
+    margin-left: -6px;
+}
+
+#policiesB::after{
+    width: 70px;
+    background-color: black;
+    margin-left: -4px;
+}
+
+#no::after{
+    width: 140px;
+    margin-left: -6px;
+    background-color: black;
+}
+
+#theme button::before{
+    content: '';
+    position: absolute;
+    margin-top: 68px;
+    margin-left: 150px;
+    z-index: 5;
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(../Images/Check-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+
+#theme button::after{
+    content: "Dark";
+    position: absolute;
+    padding-top: 68px;
+    margin-left: -16px;
+}
+
+#theme #light{
+    background-image: url(../Images/light-theme.png);
+}
+
+#theme #light::after{
+    content: "Light";
+    margin-left: -20px;
+}
+
+#theme button.actived::before{
+    display: block;
+}
+
+#theme button:not(.actived):hover::before{
+    display: block;
+    opacity: .3;
+}
+
+/* Footer */
+
+footer .bottomlinks a{
+    color: #f2f2f2;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 40px;
+    margin-left: 10%;
+    transition-property: color background-color;
+    transition:  0.3s 0s ease;
+}
+
+.footer_social_areas a{
+    display: inline-block;
+	width: 50px;
+    height: 50px;
+	margin-left: 20px;
+	border-radius: 1000px;
+	background-color:rgba(255, 255, 255, 0.22);
+	transition: all .5s ease;
+}
+
+.footer_social_areas{
+    margin-bottom: 100px;
+}
+
+.disc{
+	padding:10px;
+	padding-left: 27px; 
+	margin-top: 15px;
+	margin-left: 7px;
+	position: absolute;
+	opacity: 1;
+	background: rgba(0,0,0,0) url("../Images/discordicon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all .2s ease;
+}
+
+.rblx{
+	padding:10px;
+	padding-left: 27px; 
+	margin-top: 15px;
+	margin-left: 7px;
+	position: absolute;
+	opacity: 1;
+	background: rgba(0,0,0,0) url("../Images/robloxicon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all .2s ease;
+}
+
+.yt{
+	padding:10px;
+	padding-left: 27px; 
+	margin-top: 15px;
+	margin-left: 7px;
+	position: absolute;
+	opacity: 1;
+	background: rgba(0,0,0,0) url("../Images/youtubeicon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all .2s ease;
+}
+
+footer .footer_social_areas a:hover{
+	background-color: white;
+}
+
+footer .footer_social_areas a:hover span{
+	background-blend-mode: saturation;
+	filter: invert(1);
+}
+
+/*
+ ========
+ CLASSES (idk what to name this)
+ ========
+*/
+
+/* buttons */
+
+.linkbutton1{
+    color: #f2f2f2;
+    background-color: #323232;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.linkbutton1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+.linkbutton1 span:after {
+    content: '\1433';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.linkbutton1:hover span,
+.linkbutton1:focus span {
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  
+.linkbutton1:hover span:after,
+.linkbutton1:focus span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*
+ ========
+ COOKIE BANNER (yes this has its own section)
+ ========
+*/
+
+#iubenda-cs-banner{
+    box-shadow: 0px 0px 10px 0 rgb(0 0 0 / 66%);
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    width: 450px;
+    height: 350px;
+    background: #3b3b3b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 10000000 !important;
+}
+
+#bannericon{
+    height: 100px;
+    width: 100px;
+}
+
+.iubenda-cs-opt-group{
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 450px;
+}
+
+.iubenda-cs-btn-primary, .iubenda-cs-customize-btn{
+    width: 220px;
+    height: 40px;
+    background-color: rgba(80,80,80,1);
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.iubenda-cs-accept-btn{
+    margin: none;
+    background-color: white;
+    color: black;
+}
+
+.iubenda-cs-reject-btn{
+    margin-right: 10px;
+}
+
+.iubenda-cs-customize-btn{
+    width: 450px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.iubenda-cs-btn-primary:hover, .iubenda-cs-customize-btn:hover{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#iubenda-cs-title{
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: none;
+}
+
+#iubenda-cs-paragraph{
+    font-size: 15px;
+    overflow-y: auto;
+    height: 120px;
+    color: rgb(211, 211, 211)
+}
+
+#iubenda-cs-paragraph a{
+    color: rgb(255, 255, 255);
+}
+
+#iubenda-cs-paragraph::-webkit-scrollbar {
+    width: 7px;
+  }
+   
+
+#iubenda-cs-paragraph::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 200px;
+  }
+  
+
+#iubenda-cs-paragraph::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  @media screen and (max-width: 1000px) {
+    #iubenda-cs-banner{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 350px;
+        border-radius: 0;
+        padding: 1%;
+    }
+
+    .iubenda-cs-opt-group{
+        width: 97%;
+        bottom: 3vh;
+        left: 3vw;
+    }
+
+    .iubenda-cs-btn-primary{
+        width: 47%;
+        height: 40px;
+    }
+    
+    .iubenda-cs-reject-btn{
+        margin-right: 3%;
+    }
+
+    .iubenda-cs-customize-btn{
+        width: 97%;
+        margin-bottom: 10px;
+    }
+}
+
+  /*
+    ========
+    RESPONSIVE 
+    ========
+*/
+
+
+@media screen and (max-width: 700px) {
+    nav img{
+      display: none;
+    }
+}
