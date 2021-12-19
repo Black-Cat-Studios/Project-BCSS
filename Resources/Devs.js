@@ -238,5 +238,58 @@ Devs = {
                 "link" : "https://cdn.discordapp.com/attachments/691302419707068516/881832581845377044/Untitled835.png"
             }
         }
+    },
+
+    "dev5": {
+        "profile" : "https://cdn.discordapp.com/avatars/278275885197426689/66f4964a9f634991ef84e0bfb71907e7.webp?size=128",
+        "about" : `Hello im Whim! I am a programmer who specializes in back-end programming, working on custom data structures for certain applications. I Have created applications in various libraries/frameworks in C++,JS,Python,LUA. Spefically for Lua, LOVE2D and recently ROBLOX!`,
+        "name" : "whim",
+        "joinDate" : "Joined in December 2021",
+        "position" : 'Scripting & Programming',
+        "projects" : {
+            "project1" :{
+                "name" : "Roblox Server Finder",
+                "image" : "https://cdn.discordapp.com/attachments/914026143819116635/920520005571981312/unknown.png",
+                "link" : "https://greasyfork.org/en/scripts/430831-roblox-server-finder"
+            },
+
+            "project4" :{
+                "name" : "Demoid",
+                "image" : "https://images-ext-1.discordapp.net/external/Enx0ab4Sf9h403PS4p2KeEwiIh_P-wmZ3GHcXh37cLk/https/img.itch.zone/aW1nLzMwNTQ0NzcucG5n/original/Y137oj.png",
+                "link" : "https://zr0.itch.io/demoid"
+            },
+
+            "project4445435" :{
+                "name" : "Endless Tower",
+                "image" : "https://images-ext-1.discordapp.net/external/IKYw1Q7BoinrCAK_GNhlvCdX9ZaWUFqXYddsX1t4SSs/https/img.itch.zone/aW1nLzQ0NzQ0MTUucG5n/508x254%2523mb/LvxiSg.png",
+                "link" : "https://zr0.itch.io/"
+            }
+
+
+        },
+        "socials" : {
+            "Roblox" : ["@AwesomeXForLife", "https://www.roblox.com/users/48837052/profile"],
+            "Discord" : ["whim#2127", ""],
+            "Youtube" : ["Whimsical", "https://www.youtube.com/channel/UCXBKn4XmyxvzOW2cuMWk7VA"],
+        },
+        "portfolio" : {
+            "project1" :{
+                "name" : "Roblox Server Finder",
+                "image" : "https://cdn.discordapp.com/attachments/914026143819116635/920520005571981312/unknown.png",
+                "link" : "https://greasyfork.org/en/scripts/430831-roblox-server-finder"
+            },
+
+            "project4" :{
+                "name" : "Demoid",
+                "image" : "https://images-ext-1.discordapp.net/external/Enx0ab4Sf9h403PS4p2KeEwiIh_P-wmZ3GHcXh37cLk/https/img.itch.zone/aW1nLzMwNTQ0NzcucG5n/original/Y137oj.png",
+                "link" : "https://zr0.itch.io/demoid"
+            },
+
+            "project4445435" :{
+                "name" : "Endless Tower",
+                "image" : "https://images-ext-1.discordapp.net/external/IKYw1Q7BoinrCAK_GNhlvCdX9ZaWUFqXYddsX1t4SSs/https/img.itch.zone/aW1nLzQ0NzQ0MTUucG5n/508x254%2523mb/LvxiSg.png",
+                "link" : "https://zr0.itch.io/"
+            }
+        }
     }
 }
