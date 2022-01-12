@@ -85,7 +85,7 @@ Devs = {
         },
         "socials" : {
             "Roblox" : ["@xFeenixz", "https://www.roblox.com/users/312001258/profile"],
-            "Discord" : ["Feenixz#3300", ""],
+            "Discord" : ["Feenixz#3333", ""],
             "Youtube" : ["Feenixz", "https://www.youtube.com/channel/UCCsxUn8D5YRPBmxtFf64Mcw"],
         },
         "portfolio" : {
