@@ -1,0 +1,232 @@
+@import url(
+    'universal.css'
+);
+
+#newsheader{
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    background: var(--secondary);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-filter: opacity(85%);
+    filter: opacity(85%);
+    backdrop-filter: blur(10px); 
+}
+
+footer{
+    margin-top: -100px;
+}
+
+#newsheader h1{
+    position: fixed;
+    margin-top: 40px; 
+    margin-left: 30px;
+}
+
+#newsheader input{
+    position: fixed;
+    right: 60px;
+    margin-top: 35px;
+    background: none;
+	color: inherit;
+    outline: none;
+    border: none;
+	font: inherit;
+    resize: none;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 13pt;
+    width: 180px;
+    background-color: var(--tertiary);
+    border-radius: 200px;
+    transition: .2s;
+}
+
+#newsheader img{
+    width: 20px;
+    height: 20px;
+    right: 260px;
+    transition: .2s;
+    margin-top: 47px;
+    position: absolute;
+    opacity: .5;
+}
+
+#newsheader input:focus{
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+#newsheader input:focus ~ img{
+    opacity: 0;
+}
+
+#spacer{
+    height: 230px;
+}
+
+#newslist{
+    min-height: 95vh;
+    background-color: var(--tertiary);
+    overflow: auto;
+    margin: 0 auto;
+}
+
+#newslist::-webkit-scrollbar {
+    width: 7px;
+}
+   
+
+#newslist::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 200px;
+}
+  
+
+#newslist::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#newslist .newsentry{
+    transition: .5s;
+    width: 80vw;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-bottom: 3px;
+    padding-top: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    max-height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.11);
+}
+
+#newslist .newsentry:focus-visible{
+    box-shadow: 0 0 0 5px var(--main);
+}
+
+#newslist h1{
+    font-size: 20px;
+    font-weight: 600;
+    max-width: calc(100% - 200px);
+}
+
+#newslist .p{
+    font-size: 15px;
+    font-weight: 500;
+    height: 40px;
+    overflow: hidden;
+}
+
+#newslist .link{
+    float: right;
+    margin-top: -95px;
+}
+
+#newslist .link a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#newslist .link a:hover{
+    text-decoration: underline;
+}
+
+#titleheader{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    background: var(--secondary);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-filter: opacity(85%);
+    filter: opacity(85%);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    top: 61px;
+}
+
+#titleheader #close{
+    width: 15px;
+    height: 29px;
+    background-image: url(../Images/arrow.png);
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 27px;
+    filter: invert(1);
+}
+
+#titleheader h1{
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 3px;
+    font-size: 25px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+#titleheader #personwhomade{
+    color: grey;
+    text-decoration: none;
+}
+
+#titleheader #personwhomade:hover{
+    text-decoration: underline;
+}
+
+#article{
+    border-radius: 15px;
+    background: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 40px;
+    box-shadow: 0 0 25px -12px black;
+    overflow: hidden;
+    width: 80vw;
+}
+
+#article .img{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Images/lunacyrender.png);
+    margin: auto;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    height: 460px;
+}
+
+#article h1{
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#article #personwhomade2{
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+#article #personwhomade2:hover{
+    text-decoration: underline;
+}
+
+#article p{
+    font-weight: 400;
+}
+
+.internet{
+    background-color: var(--tertiary);
+}
