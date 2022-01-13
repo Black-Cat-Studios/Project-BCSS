@@ -111,14 +111,5 @@ News = {
       "title": "Words of Terror, new dev, and more!",
       "date": "December 14th, 2021",
       "id" : "wot-release"
-    },
-    "news1234": {
-      "author": "inty",
-      "authorLink": "https://black-catstudios.com/developers/?intykat",
-      "img" : "https://black-catstudios.com/Images/NewsImages/lunacyannouncement.png",
-      "description": "Hey everyone! Today I am proud to announce a project we've been working on, Lunacy. <br><br> Lunacy is a multiplayer thriller game in which 4 players must escape from 1 killer. The main focus of the game (at least story wise) is mental health, the killer's goal is to scare you as much as much as possible which makes it easier for them to kill you. The players need to complete puzzles in order to escape (as you can see this game is very much based off of dead by daylight). Keep in mind the mechanics are going to change as test builds are released! <br><br> Now, I recently got a job so I won't be able to spend as much time on it, however this is a blessing in disguise! This means we can hire developers to come and work with us. Make sure to be in the discord server so you'll see how we're doing! <br><br> Thanks for reading, see you soon.",
-      "title": "butt butter",
-      "date": "July 28, 2021",
-      "id" : "lunacy-redveal"
-    },
+    }
 }
