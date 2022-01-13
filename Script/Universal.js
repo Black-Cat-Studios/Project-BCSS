@@ -2,7 +2,7 @@
 // This is probably the most disgusting script anyone has ever seen
 // --Intykat
 
-if(window.location.href.search('mail')){
+if(window.location.href.includes('mail')){
   window.location.replace("https://mail.black-catstudios.com/mail");
 }
 
