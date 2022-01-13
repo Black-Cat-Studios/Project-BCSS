@@ -112,7 +112,7 @@ News = {
       "date": "December 14th, 2021",
       "id" : "wot-release"
     },
-    "news4": {
+    "news676767": {
       "author": "iadsasdntykat",
       "authorLink": "https://black-catstudios.com/developers/?intykat",
       "img" : "https://black-catstudios.com/Images/NewsImages/woticon.png",
