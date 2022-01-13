@@ -1,7 +1,7 @@
 Devs = {
     "dev1": {
         "profile" : "https://yt3.ggpht.com/yc_ZRYMV7BuRfFYpKMKAy4-g-o8zv5ODieuAYuHudnQTess3DPehV4X_tr3X5z3HSOrS-eW2=s600-c-k-c0x00ffffff-no-rj-rp-mo",
-        "about" : "Hey! I'm inty. I'm the creator/ owner here, and I do a few things. I coded this website, and I script the games aswell as UI. Thanks for stopping by!",
+        "about" : "Hey! AHWBDHIDI'm inty. I'm the creator/ owner here, and I do a few things. I coded this website, and I script the games aswell as UI. Thanks for stopping by!",
         "name" : "intykat",
         "joinDate" : "Created BCS in 2018",
         "position" : 'Owner, Scripter, UI, Sound, & Animation',
