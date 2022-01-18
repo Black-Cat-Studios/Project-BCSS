@@ -6,7 +6,7 @@ function loadJSON(callback) {
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://black-catstudios.com/Resources/News.json', false); 
+    xobj.open('GET', 'https://black-catstudios.com/Resources/News.json', true); 
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
@@ -17,19 +17,7 @@ function loadJSON(callback) {
 
  loadJSON(function(response) {
       var news = JSON.parse(response);
-   });
-
-function ReverseObject(Obj){
-    var TempArr = [];
-    var NewObj = {};
-    for (var Key in Obj){
-        TempArr.push(Key);
-    }
-    for (var i = TempArr.length-1; i >= 0; i--){
-        NewObj[TempArr[i]] = Obj[TempArr[i]];
-    }
-    return NewObj;
-} 
+      
 
 let newsentries = ReverseObject(news)
 
@@ -110,8 +98,6 @@ function filter(){
         document.getElementById("oops").style.display = "none";
     }
 }
-
-document.addEventListener("DOMContentLoaded", function(event) { 
     if (window.location.href.includes("?")){
         
         let splitString = window.location.href.split("?")
@@ -149,4 +135,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         }
     }
-})
+   });
+
+function ReverseObject(Obj){
+    var TempArr = [];
+    var NewObj = {};
+    for (var Key in Obj){
+        TempArr.push(Key);
+    }
+    for (var i = TempArr.length-1; i >= 0; i--){
+        NewObj[TempArr[i]] = Obj[TempArr[i]];
+    }
+    return NewObj;
+} 
