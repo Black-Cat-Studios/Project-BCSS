@@ -2,50 +2,67 @@
 // This is probably the most disgusting script anyone has ever seen
 // --Intykat
 
-news = News
+function loadJSON(callback) {   
+
+    var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'https://black-catstudios.com/Resources/News.json', true); 
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ }
+
+ loadJSON(function(response) {
+    var news = JSON.parse(response);
+    var children = document.getElementById("news1").children // I know I should've used a for loop
+
+    for (var i = 0; i < children.length; i++) {
+        var Child = children[i];
+        if (Child.className == "date") {
+            Child.childNodes[0].innerHTML = news[Object.keys(news)[Object.keys(news).length - 1]].author + ' - ' + news[Object.keys(news)[Object.keys(news).length - 1]].date;
+            Child.childNodes[0].href = news[Object.keys(news)[Object.keys(news).length - 1]].authorLink
+        } else if (Child.className == "text") {
+            Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 1]].description;
+        } else if (Child.className == "title") {
+            Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 1]].title;
+        }
+    }
+
+    var children = document.getElementById("news2").children
+
+    for (var i = 0; i < children.length; i++) {
+        var Child = children[i];
+        if (Child.className == "date") {
+            Child.childNodes[0].innerHTML = news[Object.keys(news)[Object.keys(news).length - 2]].author + ' - ' + news[Object.keys(news)[Object.keys(news).length - 2]].date;
+            Child.childNodes[0].href = news[Object.keys(news)[Object.keys(news).length - 2]].authorLink
+        } else if (Child.className == "text") {
+            Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 2]].description;
+        } else if (Child.className == "title") {
+            Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 2]].title;
+        }
+    }
+
+    var children = document.getElementById("news3").children
+
+    for (var i = 0; i < children.length; i++) {
+        var Child = children[i];
+        if (Child.className == "date") {
+            Child.childNodes[0].innerHTML = news[Object.keys(news)[Object.keys(news).length - 3]].author + ' - ' + news[Object.keys(news)[Object.keys(news).length - 2]].date;
+            Child.childNodes[0].href = news[Object.keys(news)[Object.keys(news).length - 3]].authorLink
+        } else if (Child.className == "text") {
+            Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 3]].description;
+        } else if (Child.className == "title") {
+            Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 3]].title;
+        }
+    }
+
+});
 games = Games
 
-var children = document.getElementById("news1").children // I know I should've used a for loop
 
-for (var i = 0; i < children.length; i++) {
-    var Child = children[i];
-    if (Child.className == "date") {
-        Child.childNodes[0].innerHTML = news[Object.keys(news)[Object.keys(news).length - 1]].author + ' - ' + news[Object.keys(news)[Object.keys(news).length - 1]].date;
-        Child.childNodes[0].href = news[Object.keys(news)[Object.keys(news).length - 1]].authorLink
-      } else if (Child.className == "text") {
-        Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 1]].description;
-    } else if (Child.className == "title") {
-        Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 1]].title;
-    }
-}
-
-var children = document.getElementById("news2").children
-
-for (var i = 0; i < children.length; i++) {
-    var Child = children[i];
-    if (Child.className == "date") {
-        Child.childNodes[0].innerHTML = news[Object.keys(news)[Object.keys(news).length - 2]].author + ' - ' + news[Object.keys(news)[Object.keys(news).length - 2]].date;
-        Child.childNodes[0].href = news[Object.keys(news)[Object.keys(news).length - 2]].authorLink
-      } else if (Child.className == "text") {
-        Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 2]].description;
-    } else if (Child.className == "title") {
-        Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 2]].title;
-    }
-}
-
-var children = document.getElementById("news3").children
-
-for (var i = 0; i < children.length; i++) {
-    var Child = children[i];
-    if (Child.className == "date") {
-        Child.childNodes[0].innerHTML = news[Object.keys(news)[Object.keys(news).length - 3]].author + ' - ' + news[Object.keys(news)[Object.keys(news).length - 2]].date;
-        Child.childNodes[0].href = news[Object.keys(news)[Object.keys(news).length - 3]].authorLink
-      } else if (Child.className == "text") {
-        Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 3]].description;
-    } else if (Child.className == "title") {
-        Child.innerHTML = news[Object.keys(news)[Object.keys(news).length - 3]].title;
-    }
-}
 
 // Here's probably the hardest part of the site: the slidy thingy at the top
 // I think to start I'm going to make an array of slides for it to cycle through
