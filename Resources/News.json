@@ -35,22 +35,13 @@
     "date": "December 14th, 2021",
     "id": "wot-release"
   },
-  "so-this-is-a-title-lol": {
+  "kitter-discord-bot-release!": {
     "author": "intykat",
     "authorLink": "https://black-catstudios.com/developers?intykat",
-    "img": "https://cdn.discordapp.com/attachments/739518471821459518/934635057983930398/bcs.png",
-    "description": "So this is the message, I right click it > apps > use as announcement (so that we can edit it without it being force by the command and finalize the whole thing)\n\n<i>also hi</i>",
-    "title": "so this is a title lol",
+    "img": "https://cdn.discordapp.com/attachments/739518470906970188/934648253180416000/Untitled891_20210917205503.png",
+    "description": "Hey everyone! \nHope you're all doing great, today we are releasing <i>Kitter</i> our new discord bot.\n\nKitter is still in the works, but we're ready to release the base of the bot now.\n\nKitter takes full advantage of discord.js version 13 to bring you slash commands, context commands, buttons, select menus, and more fun stuff that you can see yourself. Here's a list of features:\n<ul>\n         <li>Audit logger, logging reasons aswell as tracking invites </li>\n         <li>Ability to talk to Kitter with Clever Bot API</li>\n         <li>New leveling system with html to image generated score cards</li>\n         <li>Roles on leveling up</li>\n         <li>No legacy commands, slash commands only</li>\n         <li>Context menu commands</li>\n         <li>Buttons for verification and select menu for pings</li>\n         <li>Links announcements on discord aswell as the site which actually took me the most time to make lol</li>\n</ul>\n\nAnd commands so far:\n<h6>Slash commands</h6>\n<ul>\n         <li>Define: Define a word or phrase from Urban Dictionary </li>\n         <li>Cat: Show a random cat!!!!!!!!!</li>\n         <li>Score: View your score card</li>\n         <li>Leaderboard: View top ten scores</li>\n</ul>\n<h6>Context commands</h6>\n<ul>\n         <li>Message: right click a message and click apps > translate to see an english version </li>\n         <li>Message: right click a message and click apps > use as announcement to create an announcement from a message </li>\n         <li>User: right click a user and click apps > see score to see that user's scorecard </li>\n</ul>\n\nThis bot was developed entirely by <a href=\"https://black-catstudios.com/developers?intykat\">intykat</a>",
+    "title": "Kitter discord bot release!",
     "date": "January 23, 2022",
-    "id": "so-this-is-a-title-lol"
-  },
-  "testes-testes-123": {
-    "author": "intykat",
-    "authorLink": "https://black-catstudios.com/developers?intykat",
-    "img": "https://cdn.discordapp.com/attachments/739518471821459518/934637216154677358/bcs.png",
-    "description": "Sorry for the ping, I needed to test this out lol",
-    "title": "testes testes 123",
-    "date": "January 23, 2022",
-    "id": "testes-testes-123"
+    "id": "kitter-discord-bot-release!"
   }
 }
