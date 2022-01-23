@@ -43,5 +43,14 @@
     "title": "hey all",
     "date": "January 23, 2022",
     "id": "hey-all"
+  },
+  "so-this-is-a-title-lol": {
+    "author": "intykat",
+    "authorLink": "https://black-catstudios.com/developers?intykat",
+    "img": "https://cdn.discordapp.com/attachments/739518471821459518/934635057983930398/bcs.png",
+    "description": "So this is the message, I right click it > apps > use as announcement (so that we can edit it without it being force by the command and finalize the whole thing)\n\n<i>also hi</i>",
+    "title": "so this is a title lol",
+    "date": "January 23, 2022",
+    "id": "so-this-is-a-title-lol"
   }
 }
