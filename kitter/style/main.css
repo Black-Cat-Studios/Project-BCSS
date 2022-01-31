@@ -81,6 +81,12 @@ a{
     border-radius: 10px 10px 0 0;
 }
 
+.area p{
+    color: lightgrey;
+    font-size: 17px;
+    text-align: left;
+}
+
 #KitterAbout{
     position: relative;
     width: 99%;
@@ -115,3 +121,78 @@ a{
 #KitterAbout p{
     text-align: left;
 }
+
+#features div:not(.area){
+    padding: 20px;
+    background: rgb(82, 82, 82);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left!important;
+    font-size:20px;
+}
+
+#features div:not(.area) img{
+    width: 70px;
+    float: left;
+    margin-bottom: 60px;
+    margin-right: 20px;
+}
+
+#features div:not(.area) p{
+    font-size: 17px;
+    color: lightgrey;
+    text-align: left;
+}
+
+#features div:not(.area) div{
+    padding: 10px;
+    float: right;
+    width: calc(100% - 150px);
+    background: rgb(105, 105, 105);
+    margin: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    text-align: center!important;
+}
+
+#features div:not(.area) div p{
+    text-align: center;
+}
+
+#features div:not(.area)::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about img {
+    float:right;
+    width: 20%;
+    margin: 10px;
+    margin-right: 0px;
+}
+
+#about div:not(.area) {
+    padding: 20px;
+    padding-top: 1px;
+    background: rgb(82, 82, 82);
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 10px;
+    text-align: left!important;
+    font-size:20px;
+    width: 70%;
+    float: right;
+}
+
+#about div:not(.area) p{
+    font-size: 17px;
+    color: lightgrey;
+    text-align: left;
+}
+
+.area::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
