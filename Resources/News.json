@@ -1,0 +1,47 @@
+{
+  "news1": {
+    "author": "intykat",
+    "authorLink": "https://black-catstudios.com/developers/?intykat",
+    "img": "https://black-catstudios.com/Images/NewsImages/lunacyannouncement.png",
+    "description": "Hey everyone! Today I am proud to announce a project we've been working on, Lunacy. <br><br> Lunacy is a multiplayer thriller game in which 4 players must escape from 1 killer. The main focus of the game (at least story wise) is mental health, the killer's goal is to scare you as much as much as possible which makes it easier for them to kill you. The players need to complete puzzles in order to escape (as you can see this game is very much based off of dead by daylight). Keep in mind the mechanics are going to change as test builds are released! <br><br> Now, I recently got a job so I won't be able to spend as much time on it, however this is a blessing in disguise! This means we can hire developers to come and work with us. Make sure to be in the discord server so you'll see how we're doing! <br><br> Thanks for reading, see you soon.",
+    "title": "Lunacy Reveal Announcement",
+    "date": "July 28, 2021",
+    "id": "lunacy-reveal"
+  },
+  "news2": {
+    "author": "intykat",
+    "authorLink": "https://black-catstudios.com/developers/?intykat",
+    "img": "https://black-catstudios.com/Images/NewsImages/kitter.png",
+    "description": "Hey everyone! \n      I know things have been kinda quiet but that's because we have a TON of shit planned STARTING OFF WITH THE NEW MASCOTTTTTTT! That's right, meet the once discord project, Kitter. Kitter is a black <b>CAT NOT A DOG I WILL HIT YOU IF YOU SAY DOG</b>!!!!!!!!!!! And he's here to stay with us at black cat studios as our official mascot!\n      <br><br> Kitter comes with some stuff!\n      <ul>\n      <li> Kitter Stickers </li>\n      <li> Kitter Emoji</li>\n      <li> Kitter appearances </li>\n      <li> and much more!!!! </li>\n      </ul>\n      Hope you all enjoy!!!!!\n    ",
+    "title": "Mascot Release",
+    "date": "August 31, 2021",
+    "id": "kitters-release"
+  },
+  "news3": {
+    "author": "Feenixz",
+    "authorLink": "https://black-catstudios.com/developers/?feenixz",
+    "img": "https://black-catstudios.com/Images/NewsImages/websitegraphic.png",
+    "description": "\n      <h3>We have a new website!</h3>\n      \n      Welcome to the site! This is the official Black Cat Studios site where you can see information about us, see our up and coming games, and check out the latest information about BCS! We put a lot of time, effort, and love into this site and we hope you like it as much as we do!\n      <br> <br>\n      <h3>Features</h3>\n      <br>\n      Currently available:\n      <ul>\n       <li> Games List </li>\n       <li> News Feed </li>\n       <li> Developers List </li>\n       <li> Developer portfolios </li>\n       <li> Kitter is on some pages! </li>\n       <li> Developer Socials </li>\n       <li> Feedback sent live to our discord server </li>\n      </ul>\n      Coming up:\n      <ul>\n      <li> Account system </li>\n      <li> Discord verification system </li>\n      <li> More portfolio control </li>\n      <li> More awesome features + you can request some in the feedback! </li>\n      </ul>\n      <br> <br>\n      <h3>Credits</h3><br>\n      We started working on this in September, and are just now finally releasing! These are the people who helped bring it up: \n      <ul>\n      <li> Feenixz (Site Design, Iconography, & Finishing Touches aka forcing inty to fucking die) </li>\n      <li> Intykat (Frontend coding, Site Building, server management) </li>\n      <li> Volking (Backend coding) </li>\n      <li> Danny (kitter appearances!) </li>\n      </ul>\n      Thank you all for visiting, we plan to add things to this site as time goes on. Hope you'll all enjoy! \n      ",
+    "title": "Website Release!",
+    "date": "November 17th, 2021",
+    "id": "site-release"
+  },
+  "news4": {
+    "author": "intykat",
+    "authorLink": "https://black-catstudios.com/developers/?intykat",
+    "img": "https://black-catstudios.com/Images/NewsImages/woticon.png",
+    "description": "\n      <h3>  WoT?!?!?!? </h3>\n      Hey everyone! Today I am proud to announce \"Words of Terror\". Words of Terror, aka WoT, is Black Cat Studuio's first ever plugin.\n      Developed by <a href=\"https://black-catstudios.com/developers/?intykat\"> intykat </a> and <a href=\"https://black-catstudios.com/developers/?volking\"> Volking </a>, WoT is a plugin designed to do the OPPOSITE of helping you.\n      <br>\n      You see WoT is a plugin that CONSTANTLY throws insults at you. You can see a full list of them <a href=\"https://black-catstudios.com/WoT-Util/Demotivation-Words.json\"> here. </a>\n      Me and Volking had just randomly thought of it for fun and thought we should do it for learning how to make more plugins in the future. Yes, this means we will be working on some more :)\n      <br>\n      <a href=\"https://www.roblox.com/library/6856957291/Words-of-terror\"> Install the plugin here </a>\n      <br> <br>\n      <h3> Whim has joined! </h3>\n      A new developer is here! His name is whim, and he is one of the most godly scripters I have ever seen in my entire life. Seriously.\n      He was working on another project and offered to help us out with bcs out of pure generosity.\n      whim may be helping us with some really cool project we have lined up for the future!\n      <br> <br>\n      <h3> Other updates! </h3>\n      The Discord is getting some new stickers & emoji for kitter! \n      These include:\n      <ul>\n      <li> Expressionless </li>\n      <li> Scream </li>\n      <li> Blush </li>\n      <li> Raised Eyebrow </li>\n      </ul>\n      We hope you'll enjoy them.\n      <br>\n      Additionally, the annual BCS roblox shirt is avaliable again!\n      <a href=\"https://www.roblox.com/catalog/6048947949/Chirstmas-limted-BCS-shirt\"> Check it out here </a>\n      <br> <br>Anyway, cya guys with more exciting news soon! Bya!\n\n      ",
+    "title": "Words of Terror, new dev, and more!",
+    "date": "December 14th, 2021",
+    "id": "wot-release"
+  },
+  "kitter-discord-bot-release!": {
+    "author": "intykat",
+    "authorLink": "https://black-catstudios.com/developers?intykat",
+    "img": "https://cdn.discordapp.com/attachments/739518470906970188/934648253180416000/Untitled891_20210917205503.png",
+    "description": "Hey everyone! \nHope you're all doing great, today we are releasing <i>Kitter</i> our new discord bot.\n\nKitter is still in the works, but we're ready to release the base of the bot now.\n\nKitter takes full advantage of discord.js version 13 to bring you slash commands, context commands, buttons, select menus, and more fun stuff that you can see yourself. Here's a list of features:\n<ul>\n         <li>Audit logger, logging reasons aswell as tracking invites </li>\n         <li>Ability to talk to Kitter with Clever Bot API</li>\n         <li>New leveling system with html to image generated score cards</li>\n         <li>Roles on leveling up</li>\n         <li>No legacy commands, slash commands only</li>\n         <li>Context menu commands</li>\n         <li>Buttons for verification and select menu for pings</li>\n         <li>Links announcements on discord aswell as the site which actually took me the most time to make lol</li>\n</ul>\n\nAnd commands so far:\n<h6>Slash commands</h6>\n<ul>\n         <li>Define: Define a word or phrase from Urban Dictionary </li>\n         <li>Cat: Show a random cat!!!!!!!!!</li>\n         <li>Score: View your score card</li>\n         <li>Leaderboard: View top ten scores</li>\n</ul>\n<h6>Context commands</h6>\n<ul>\n         <li>Message: right click a message and click apps > translate to see an english version </li>\n         <li>Message: right click a message and click apps > use as announcement to create an announcement from a message </li>\n         <li>User: right click a user and click apps > see score to see that user's scorecard </li>\n</ul>\n\nThis bot was developed entirely by <a href=\"https://black-catstudios.com/developers?intykat\">intykat</a>",
+    "title": "Kitter discord bot release!",
+    "date": "January 23, 2022",
+    "id": "kitter-discord-bot-release!"
+  }
+}

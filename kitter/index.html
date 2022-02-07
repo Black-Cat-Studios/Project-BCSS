@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+<meta name="description" content="Welcome to my place! Here you can view all of my commands!">
+<meta http-equiv="content-language" content="en"> 
+<link rel="icon" type="image/png" href="https://black-catstudios.com/Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="./style/main.css">
+
+<title>Kitter</title>
+ 
+</head>
+
+
+<body>
+    <header>
+        <img src="https://black-catstudios.com/Images/kitterlogo.png"/>
+        <nav id="nav">
+            <a class="a active" href="#commands">Commands</a>
+            <a class="a" href="#features">Features</a>
+            <a class="a" href="#about">About The Project</a>
+            <a class="a" href="https://black-catstudios.com/">Black Cat Studios <img src="/Images/eafsd.png"/></a>
+        </nav>
+    </header>
+
+    <div id="KitterAbout">
+        <div>
+        <img id="kitter" src="https://black-catstudios.com/Images/kitterpfp.png">
+        </div>
+        <div id='right'>
+            <h1 style="font-size: 40px; margin-bottom: 2px;"> Kitter </h1>
+            <p style="font-size: 20px; margin-top: 0px;">Welcome to kitter's page! Kitter is a discord bot for Black Cat Studios' <a href=" https://discord.gg/7Gr39jb">Discord Server.</a> Kitter has a ton of commands and features for you to check out.</p>
+        </div>
+    </div>
+
+    <div id="commands">
+        <div class="area">
+            <h1> Commands </h1>
+            <p> List of all commands. Arguments in "[ ]" are required, "< >" means they are not. <br>
+                Commands marked as context mean they are only avaliable through the context menu. (ex: Right click > Apps > Command) <br>
+                Context commands with the MESSAGE type are avaliable by right clicking a message in the context menu, same with USER <br>
+                Commands with the SLASH type can be accessed by typing: "/[command]"
+                Subcommands can be accessed by typing: "/[basecommand] [subcommand]"
+            </p> 
+        </div>
+        <table id="commands-table">
+              <tr>
+                <th>Command Name & Arguments</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Type</th>
+              </tr>
+
+              <tr>
+                <td>Help</td>
+                <td>Returns this site</td>
+                <td>Info</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Translate <span id="tag">CONTEXT</span></td>
+                <td>Returns an english translated version of a message.</td>
+                <td>Info</td>
+                <td>MESSAGE</td>
+              </tr>
+
+              <tr>
+                <td>Use As Announcement <span id="tag">CONTEXT</span> <span id="tag">ADMIN ONLY</span></td>
+                <td>Uses the seletected message as an announcement. Some users can post the announcement to the website in the builder.</td>
+                <td>Admin</td>
+                <td>MESSAGE</td>
+              </tr>
+
+              <tr>
+                <td>Define [word or phrase]</td>
+                <td>Returns a definition of a word or phrase via <a href="https://www.urbandictionary.com/">Urban Dictionary</a> **These may not be accurate definitions**</td>
+                <td>Fun</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Rps [choice]</td>
+                <td>Rock paper scissors!</td>
+                <td>Fun</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Cat</td>
+                <td>Returns a random cat!</td>
+                <td>Fun</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Gamemode</td>
+                <td>hmm... wonder what this does</td>
+                <td>Fun</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Leaderboard</td>
+                <td>Returns top ten scores in the server.</td>
+                <td>Level System</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Score</td>
+                <td>Returns an HTML image card of your score.</td>
+                <td>Level System</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>See Score <span id="tag">CONTEXT</span></td>
+                <td>Returns an HTML image card of selected user's score.</td>
+                <td>Level System</td>
+                <td>USER</td>
+              </tr>
+
+              <tr>
+                <td>Paystuffs</td>
+                <td>Returns your economy info such as job, balance, and businesses.</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>See Paystuffs <span id="tag">CONTEXT</span></td>
+                <td>Returns selected user's economy info such as job, balance, and businesses.</td>
+                <td>Economy</td>
+                <td>USER</td>
+              </tr>
+
+              <tr>
+                <td>Job Work<span id="tag">SUBCOMMAND</span></td>
+                <td>Go to work slave... Gives money</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Job List<span id="tag">SUBCOMMAND</span></td>
+                <td>Lists your avaliable jobs. Your job list depends on your server's level. (More activity = better jobs)</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Job Set [Job #]<span id="tag">SUBCOMMAND</span></td>
+                <td>Sets your job to the selected job.</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Beg</td>
+                <td>Begs a random celebrity for money.</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Search</td>
+                <td>Search around for money.</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Business Create [type] [name]<span id="tag">SUBCOMMAND</span></td>
+                <td>Creates a business</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Business Maintain<span id="tag">SUBCOMMAND</span></td>
+                <td>Maintins your business which gives you money.</td>
+                <td>Economy</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Play [query]</td>
+                <td>Add a track to the queue. Supports: Searching, youtube links, spotify links, soundcloud links. Also supports playlists.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Playing</td>
+                <td>Lists info on current track.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Skip</td>
+                <td>Skips current track.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Clear</td>
+                <td>Clears all tracks from the queue.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Shuffle</td>
+                <td>Shuffles the queue.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Queue</td>
+                <td>Lists the tracks in queue.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Repeat [mode]</td>
+                <td>Changes the repeat mode.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+
+              <tr>
+                <td>Lyrics < songname ></td>
+                <td>Lists lyrics for a song based on title.</td>
+                <td>Music</td>
+                <td>SLASH</td>
+              </tr>
+        </table>
+    </div>
+
+    <div id="features">
+        <div class="area">
+            <h1> Features </h1>
+            <div>
+              <img src = "/Images/arrowk.png">
+              <h3> Ranking system </h3>
+              <p>Kitter gives you points based on your activity. Points raise your level, which in turn give you roles. The following actions reward points:</p>
+              <div id="activitylist">
+                <p>Sending messages </p>
+                <p>Being in voice chat</p>
+                <p>Inviting members </p>
+                <p>Interacting with the bot</p>
+              </div>
+            </div>
+
+            <div>
+              <img src = "/Images/enter.png">
+              <h3> Recepetion Manager </h3>
+              <p>Kitter has autorole and manages new users. You must hit a green button to verify, this lowers the chances of raids by bots. Additionally, kitter manages ping selections so that you can control which announcements you'd like to be pinged for.</p>
+            </div>
+
+            <div>
+              <img src = "/Images/announcements.png">
+              <h3> Announcement system </h3>
+              <p>Kitter manages announcements, showing them in a pretty embed. Kitter can also post announcements here to the website allowing us to easily add to the newsfeed without needing to know how to code or access the sever.</p>
+            </div>
+
+            <div>
+              <img src = "/Images/shield.png">
+              <h3> Audit Log </h3>
+              <p>Kitter shows an in-depth audit log of all events that take place. Displaying reasons, and even tracking invite uses to network possible threats.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="about">
+        <div class="area">
+          <h1> About </h1>
+          
+          <div>
+            <h3> The team </h3>
+            <p>Kitter & this site was coded by <a href="https://black-catstudios.com/developers?intykat">intykat</a><br> HTML Design & Kitter branding by <a href="https://black-catstudios.com/developers?feenixz">Feenixz</a><br> Art by <a href="https://black-catstudios.com/developers?danny">Danny</a></p>
+          </div>
+          <img id="kitterlean" src="/Images/kitterleaning.png">
+        </div>
+    </div>
+
+    <footer><div class="wedge1 variant3"></div><div class="bottom"><img src="https://black-catstudios.com/Images/bcs.png"><div class="footer_social_areas"><a href="https://www.roblox.com/groups/3874675/Black-Cat-Studios#!/about"><span class="rblx"></span></a><a href="https://discord.gg/7Gr39jb"><span class="disc"></span></a><a href="https://www.youtube.com/channel/UCOVPHg9WM7V6H7tuMYvTNLg"><span class="yt"></span></a></div><div class="bottomline"></div><div class="bottomlinks"><a href="https://black-catstudios.com/policies/cookies">Cookies Policy</a><a href="https://black-catstudios.com/policies/privacy">Privacy Policy</a><a href="mailto:contact@black-catstudios.com">contact@black-catstudios.com</a></div></div></footer>
+</body>
+
+
+<script type="text/javascript" src="./script/kitter.js">
+    </script>
+</html>

@@ -1,0 +1,199 @@
+@import url(
+    'universal.css'
+);
+
+
+h1, p{
+    text-align: center;
+}
+
+#tag{
+    padding: 7px;
+    background: rgb(34, 34, 34);
+    border-radius: 100px;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+#commands-table {
+    border-collapse: collapse;
+    width: 99%;
+    margin: auto;
+    max-width: 1024px;
+  }
+
+#commands-table td, #commands-table th {
+    padding: 12px;
+}
+
+table th:first-child {
+    border-radius: 10px 0 0 0 !important;
+}
+table th:last-child {
+    border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+    border-radius: 0 0 10px 0 !important;
+}
+
+#commands-table tr:nth-child(odd){background-color: #525252;}
+
+
+#commands-table tr:nth-child(even){background-color: #3d3d3d;}
+
+#commands-table tr:hover {transition: all 0.3s; background-color: rgb(124, 124, 124);}
+
+#commands-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #202020;
+    color: rgb(255, 255, 255);
+}
+
+a{
+      color: white;
+}
+
+.area{
+      clear: both;
+      padding: 10px;
+      text-align: center;
+      margin: auto;
+      margin-top: 70px;
+      margin-bottom: 10px;
+      background: #3d3d3d;
+      border-radius: 10px;
+      width: calc(99% - 20px);
+      max-width: 1000px;
+}
+
+.area h1{
+    width: 100%;
+    margin: 0;
+    background-color:#1a1a1a;
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.area p{
+    color: lightgrey;
+    font-size: 17px;
+    text-align: left;
+}
+
+#KitterAbout{
+    position: relative;
+    width: 99%;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1000px;
+    margin-bottom: 300px;
+}
+
+#KitterAbout img{
+    width: 200px;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    display: inline;
+}
+
+#KitterAbout div{
+    float: left;
+}
+
+#KitterAbout div#right{
+    float: right;
+    position: relative;
+    width: calc(100% - 220px);
+    margin-left: 5px;
+}
+
+#KitterAbout h1{
+    text-align: left;
+}
+
+#KitterAbout p{
+    text-align: left;
+}
+
+#features div:not(.area){
+    padding: 20px;
+    background: rgb(82, 82, 82);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left!important;
+    font-size:20px;
+}
+
+#features div:not(.area) img{
+    width: 70px;
+    float: left;
+    margin-bottom: 60px;
+    margin-right: 20px;
+}
+
+#features div:not(.area) p{
+    font-size: 17px;
+    color: lightgrey;
+    text-align: left;
+}
+
+#features div:not(.area) div{
+    padding: 10px;
+    float: right;
+    width: calc(100% - 150px);
+    background: rgb(105, 105, 105);
+    margin: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    text-align: center!important;
+}
+
+#features div:not(.area) div p{
+    text-align: center;
+}
+
+#features div:not(.area)::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about img {
+    float:right;
+    width: 14%;
+    margin: 10px;
+    margin-right: 0px;
+    margin-top: -5px;
+}
+
+#about div:not(.area) {
+    padding: 20px;
+    padding-top: 1px;
+    background: rgb(82, 82, 82);
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 10px;
+    text-align: left!important;
+    font-size:20px;
+    width: calc(78% - 40px);
+    float: right;
+}
+
+#about div:not(.area) p{
+    font-size: 17px;
+    color: lightgrey;
+    text-align: left;
+}
+
+.area::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
