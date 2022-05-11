@@ -47,7 +47,7 @@ html.dark{
 :focus-visible{
     transition: all .5s;
     outline: none;
-    box-shadow: 0 0 0 5px var(--main);
+    box-shadow: 0 0 0 2px var(--main);
 }
 
 ::-moz-focus-inner{
@@ -975,4 +975,28 @@ footer .footer_social_areas a:hover span{
     nav img{
       display: none;
     }
+}
+
+.loader {
+  width: 8px;
+  height: 48px;
+  display: block;
+  margin: auto;
+  left: -20px;
+  position: relative;
+  border-radius: 4px;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 20px 0 rgba(255, 255, 255, 0.25), 40px 0 white, 60px 0 white;
+  }
+  50% {
+    box-shadow: 20px 0 white, 40px 0 rgba(255, 255, 255, 0.25), 60px 0 white;
+  }
+  100% {
+    box-shadow: 20px 0 white, 40px 0 white, 60px 0 rgba(255, 255, 255, 0.25);
+  }
 }
